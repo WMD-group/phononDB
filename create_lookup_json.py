@@ -2,6 +2,7 @@ import os
 from pymatgen.core import Structure
 from monty.serialization import dumpfn
 from tqdm import tqdm
+import pandas as pd
 
 # Get the material ids
 db_dir = 'phonon_db'
@@ -71,6 +72,7 @@ info_dict = {'material_id':mp_ids,
             'FORCE_SETS_filepath': FS_filepath,
             'phonon_filepath': phonon_filepath }
 
-# Dump the dictionary to a json file
-print('Dumping the dictionary to a json.')
-dumpfn(info_dict, 'phonon_db_lookup.json')
+# Dump the dataframe to a json file
+df = pd.DataFrame(info_dict)
+print('Dumping the dataframe to a json.')
+dumpfn(df, 'phonon_db_lookup.json')
