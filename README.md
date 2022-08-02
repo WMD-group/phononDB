@@ -21,6 +21,8 @@ Run `extract_files.sh`, which will iteratively extract the raw data.
 
 Run `create_lookup_json.py` which will create a lookup table to allow querying of the data.
 
+(Optional: run `cleanup.sh` to remove the files and directories which are no longer need (`extract_files.sh` and `phonon_db_tarred`).)
+
 Follow `examples/querying_example.ipynb` to find an example notebook to query the data and use phonopy
 
 
