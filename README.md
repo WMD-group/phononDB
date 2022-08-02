@@ -10,8 +10,8 @@ The scripts have only been tested on MacOS, but should work on Linux too.
 
 First, you will need to clone this repository
 ```
-git clone ...
-cd ...
+git clone https://github.com/AntObi/phononDB.git
+cd phononDB
 ```
 You will need to install the following packages
 * [pymatgen](https://pymatgen.org/installation.html)
