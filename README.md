@@ -10,7 +10,7 @@ The scripts have only been tested on MacOS, but should work on Linux too.
 
 First, you will need to clone this repository
 ```
-git clone https://github.com/AntObi/phononDB.git
+git clone https://github.com/WMD-group/phononDB.git
 cd phononDB
 ```
 You will need to install the following packages
