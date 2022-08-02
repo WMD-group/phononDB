@@ -1,6 +1,6 @@
 #!/bin/bash
 # untar all the phonon data
-
+mkdir phonon_db
 FILES="phonon_db_tarred/*.lzma"
 
 for f in $FILES
