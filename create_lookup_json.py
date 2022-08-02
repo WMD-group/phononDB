@@ -32,7 +32,7 @@ elements = [s.composition.elements for s in structures]
 # Get the element symbols
 els_symbols =[]
 for els in elements:
-    els_symbols.append(el.symbol for el in tqdm(els))
+    els_symbols.append([el.symbol for el in tqdm(els)])
 
 #Get the formula
 formula_pretty_reduced = [c.reduced_formula for c in tqdm(compositions)]
@@ -75,4 +75,4 @@ info_dict = {'material_id':mp_ids,
 # Dump the dataframe to a json file
 df = pd.DataFrame(info_dict)
 print('Dumping the dataframe to a json.')
-dumpfn(df, 'phonon_db_lookup.json')
+dumpfn(df, 'phonon_db_lookup_df.json')
