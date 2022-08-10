@@ -8,7 +8,8 @@ This repository exists to provide easy access to the Kyoto University phonon dat
 The phonon data are licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) unless otherwise specified on the webpage for that particular phonon calculation.
 
 The phonon database has been web scraped and made available for simple querying for in-depth study.
-The scripts have only been tested on MacOS, but should work on Linux too.
+The scripts have only been tested on MacOS and RHEL, but should work on other Linux distributions too.
+
 
 # Setup
 
@@ -21,7 +22,9 @@ You will need to install the following packages
 * [pymatgen](https://pymatgen.org/installation.html)
 * [phonopy](https://phonopy.github.io/phonopy/install.html)
 
-Run `extract_files.sh`, which will iteratively extract the raw data.
+Run `extract_files_*.sh`, which will iteratively extract the raw data.
+* `extract_files_mac.sh` has been tested to work on MacOS
+* `extract_files_linux.sh` has been tested to work on RHEL (Linux)
 
 Run `create_lookup_json.py` which will create a lookup table to allow querying of the data.
 
