@@ -1,6 +1,6 @@
 # PhononDB
 <h2 align="center">:exclamation: NOTICE :exclamation:</h2>
-A MongoDB implementation of this dataset is currently being worked on and will be hosted remotely. The current implementation described below will make a local installation of the 10,034 phonon calculations on your device. I recommend that you have at least 2.5GB of free storage for full installation of the extracted data.
+The original location for this data () has been closed, and the data has been moved to a data repository service with access through the repository: https://github.com/atztogo/phonondb.
 
 # Introduction
 This repository exists to provide easy access to the Kyoto University phonon database [version 2018-04-17](http://phonondb.mtl.kyoto-u.ac.jp/ph20180417/index.html).
